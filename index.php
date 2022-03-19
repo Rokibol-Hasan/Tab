@@ -13,18 +13,20 @@
 </head>
 
 <body>
-  <section style="text-align: center; margin-top:200px" class="tab">
+  <section style="text-align: center;color:black; margin-top:200px;background:dark" class="tab">
     <div class="container">
       <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-          <a href="?tabone"><button type="button" class="btn btn-outline-info">Tab 1</button></a>
-          <a href="?tabtwo"><button type="button" class="btn btn-outline-warning">Tab 2</button></a>
-          <a href="?tabthree"><button type="button" class="btn btn-outline-dark">Tab 3</button></a>
+        <div class="col-md-12 card p-3">
+          <ul class="list-group list-group-horizontal text-center">
+            <li class="list-group-item "><a href="?tabone"><button type="button" class="btn btn-outline-info text-center">Tab 1</button></a></li>
+            <li class="list-group-item "><a href="?tabtwo"><button type="button" class="btn btn-outline-warning">Tab 2</button></a></li>
+            <li class="list-group-item"><a href="?tabthree"><button type="button" class="btn btn-outline-dark">Tab 3</button></a></li>
+          </ul>
           <?php
           if (isset($_GET['tabone'])) { ?>
-            <div class="tabone-text">
-              <p>
+            <div class="table-text mt-5">
+              <img src="images/1.jpg" height="200px" width="300px">
+              <p style="text-align: justify;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat quam repudiandae porro iste accusamus eum, aperiam molestias. Magni, mollitia.
               </p>
             </div>
@@ -32,24 +34,26 @@
           ?>
           <?php
           if (isset($_GET['tabtwo'])) { ?>
-            <div class="tabtwo-text">
-              <p>
-                orem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat quam repudiandae porro iste accusamus eum, aperiam molestias. Magni, mollitia.rem ipsum dolLorem ipsum 
+            <div class="table-text mt-5">
+
+              <img src="images/2.jpg" height="200px" width="300px">
+              <p style="text-align: justify;">
+                orem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat quam repudiandae porro iste accusamus eum, aperiam molestias. Magni, mollitia.rem ipsum dolLorem ipsum
               </p>
             </div>
           <?php }
           ?>
           <?php
           if (isset($_GET['tabthree'])) { ?>
-            <div class="tabthree-text">
-              <p>
+            <div class="table-text mt-5">
+              <img src="images/3.jpg" height="200px" width="300px">
+              <p style="text-align: justify;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat quam repudiandae porro iste accusamus eum, aperiam molestias. Magni, mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat quam repudiandae porro iste accusamus eum, aperiam molestias. Magni, mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat quam repudiandae porro iste accusamus eum, aperiam molestias. Magni, mollitia.
               </p>
             </div>
           <?php }
           ?>
         </div>
-        <div class="col-md-3"></div>
       </div>
     </div>
   </section>
